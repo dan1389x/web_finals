@@ -1,0 +1,509 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+   </head>
+<style>
+    body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 0px;
+    flex-direction: column;
+}  
+    .banner_img{
+      height: 550px;
+      width: 100%;
+    }
+     footer{
+      width: 100%;
+      bottom: 0;
+      margin-top: auto;
+     }
+     .flex-container_1 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.flex-items_image_1 {
+  display: block;
+  margin-left: 20px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items_slogan_1 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.container_image{
+  height: 300px;
+  width: 400px;  
+}
+.artist_image{
+  height: 500px;
+  width: 500px;
+}
+.flex-container_2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.flex-items_image_2 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items_slogan_2 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.flex-container_3 {
+  display: flex;
+  margin-bottom: 100px;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.flex-items_image_3 {
+  display: block;
+  margin-left: 20px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items_slogan_3 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.flex-container_4 {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 60px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+.flex-items_slogan_4_button{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: flex-end;
+  order: 0;
+}
+.flex-items_image_4 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items_slogan_4 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.flex-container_5 {
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 100px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.flex-items_image_5 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items_slogan_5 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.flex-items_slogan_5_button{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: flex-end;
+  order: 0;
+}
+.flex-container_6 {
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 100px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+.flex-items_slogan_6_button{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: flex-end;
+  order: 0;
+}
+.flex-items_image_6 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items_slogan_6 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.flex-artist {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: normal;
+  align-content: normal;
+}
+
+.flex-artwork_1 {
+  display: block;
+  margin-right: 30px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-artwork_2 {
+  display: block;
+  margin-right: 30px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-artwork_3 {
+  display: block;
+  margin-right: 30px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.artwork{
+  height: 300px;
+  width: 300px;
+}
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+section{
+  margin-bottom: 100px;
+}
+.artwork_name_1{
+  margin-left: 45px;
+}
+.artwork_name_2{
+  margin-left: 90px;
+}
+.artwork_name_3{
+  margin-left: 110px;
+}
+.artist_name_1{
+  margin-left: 35px;
+}
+.artist_name_2{
+  margin-left: 50px;
+}
+.artist_name_3{
+  margin-left: 60px;
+}
+.flex-items_slogan_4{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.flex-items_slogan_5{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.flex-items_slogan_6{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+</style>
+   <body>
+      {% block nav %}
+      {% include 'webapp/templates/pages/navbar.html' %}
+      <div id="container" class="carousel slide carousel-fade">
+        <div id="content-wrap">
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+            <!-- Main Banner-->
+             <img class ="banner_img" src="/static/images/masterpiece-4359011_1280.jpg" class="d-block w-100">
+           </div>
+           <div class="carousel-item">
+            <img class="banner_img" src="/static/images/julius-caesar-4877717_1280.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class="banner_img" src="/static/images/woman-1768717_960_720.jpg" class="d-block w-100" alt="...">
+          </div>
+          <!-- Banner end -->
+         <button class="carousel-control-prev" type="button" data-bs-target="#container" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#container" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+      </div>
+                               <!-- FLEX CONTAINERS -->
+      <!--container_1-->
+      <div class="flex-container_1">
+        <div class="flex-items_image_1">
+          <img class="container_image" src="/static/images/kiss.jpg">
+        </div>
+        <div class="flex-items_slogan_1">
+          <h1> Discover art beyond boundaries as vision meets canvas and beauty unfolds </h1>
+        </div>
+     </div>
+     <!--container_2-->
+     <div class="flex-container_2">
+      <div class="flex-items_image_2">
+        <img class="container_image" src="/static/images/face.jpg">
+      </div>
+      <div class="flex-items_slogan_2">
+        <h1> Explore Art Beyond Limits as Imagination Unleashes Creativity through the Medium </h1>
+      </div>
+   </div>
+   <!--container_3-->
+   <div class="flex-container_3">
+    <div class="flex-items_image_3">
+      <img class="container_image" src="/static/images/vincent.jpg">
+    </div>
+    <div class="flex-items_slogan_3">
+      <h1> Unleash Creativity through Various Mediums, Exploring an Artistic Journey Beyond Limits </h1>
+    </div>
+ </div>
+                              <!--FEATURED ARTISTS-->
+  <!--artist_1-->
+  <center><h1> Featured Artist </h1></center>
+  <div class="flex-container_4">
+        <div class="flex-items_image_4">
+          <img class="artist_image" src="/static/images/gogh.jpg">
+        </div>
+        <div class="flex-items_slogan_4">
+          <p>
+            <strong>Vincent van Gogh</strong>, a renowned Dutch Post-Impressionist painter, left an indelible mark on the art world with his vibrant and emotionally charged works. Born on March 30, 1853, in Groot-Zundert, Netherlands, van Gogh's artistic journey was characterized by an intense dedication to his craft and a unique approach to color, form, and expression.
+            
+            Despite facing personal challenges and mental health struggles throughout his life, van Gogh produced a vast and influential body of work that continues to captivate audiences worldwide. His distinctive style, characterized by bold brushstrokes, vivid colors, and emotive landscapes, reflects both the artist's inner turmoil and his deep connection to nature.
+            
+            Van Gogh's oeuvre includes iconic masterpieces such as "Starry Night," "Sunflowers," and "The Bedroom," each showcasing his innovative use of color and texture. Tragically, he passed away at the age of 37 in 1890, leaving behind a legacy that has since solidified his status as one of the most celebrated and influential figures in the history of Western art. Today, Vincent van Gogh's works are displayed in major museums around the world, and his profound impact on the art world continues to inspire generations of artists and art enthusiasts alike.</p>
+          </div>
+          <div class="flex-items_slogan_4_button">
+            <a href="http://127.0.0.1:8000/VanGogh/"><button type="button" id="button" class="btn btn-outline-dark"> Visit Profile </button></a>
+          </div>
+ </div>
+ <!--artist_2-->
+ <div class="flex-container_5">
+  <div class="flex-items_image_5">
+    <img class="artist_image" src="/static/images/salvador_dali.jpg">
+  </div>
+  <div class="flex-items_slogan_5">
+  <p>
+    <strong>Salvador Dalí (1904-1989)</strong>, a prominent Spanish surrealist artist, is best known for his eccentric and dreamlike creations that pushed the boundaries of traditional art. Born in Figueres, Catalonia, Dalí displayed early artistic talent and later joined the Surrealist movement, led by André Breton. His works, such as "The Persistence of Memory," are characterized by bizarre and melting forms, symbolic motifs, and meticulous detail. Dalí's eccentric personality and distinctive mustache added to his public persona. A master of self-promotion, he blended reality and fantasy in a way that left an indelible mark on 20th-century art, solidifying his place as one of the most iconic and enigmatic artists in history.
+  </p>
+  </div>
+  <div class="flex-items_slogan_5_button">
+    <a href="http://127.0.0.1:8000/SalvadorDali/"><button type="button" id="button" class="btn btn-outline-dark"> Visit Profile </button></a>
+  </div>
+</div>
+ <!--artist_3-->
+ <div class="flex-container_6">
+  <div class="flex-items_image_6">
+    <img class="artist_image" src="/static/images/korney.jpg">
+  </div>
+  <div class="flex-items_slogan_6">
+    <p><strong>Korney Chukovsky (1882-1969)</strong>, a prominent Russian writer, poet, and literary critic, holds a distinguished place in children's literature. Born in St. Petersburg, Chukovsky is celebrated for his enchanting and imaginative works that have charmed generations of young readers. His iconic children's stories, including "Moidodyr" and "Doctor Aybolit," showcase a delightful blend of whimsy, humor, and insightful moral lessons. Chukovsky's literary contributions extended beyond children's literature, encompassing translations, essays, and critiques that left a lasting impact on Russian literary culture. Through his creativity and linguistic prowess, Korney Chukovsky remains a beloved figure in the world of literature, enchanting both young and adult audiences alike.</p>
+  </div>
+  <div class="flex-items_slogan_6_button">
+    <a href="http://127.0.0.1:8000/KorneyChukovsky/"><button type="button" id="button" class="btn btn-outline-dark"> Visit Profile </button></a>
+  </div>
+</div>
+  <center><h1> Artworks</h1></center>
+                        <!--Artworks-->
+  <div class="flex-artist">
+    <div class="flex-artwork_1">
+        <img class="artwork" src="/static/images/the-panciatichi-holy-family-1540.jpg!PinterestSmall.jpg">
+        <p class="artwork_name_1"><strong>The Panciatichi Holy Family</strong></p>
+        <a href="http://127.0.0.1:8000/AngeloBronzino/"><p class="artist_name_1">Angelo Bronzino (1503-1572)</p></a>
+    </div>
+    <div class="flex-artwork_2">
+      <img class="artwork" src="/static/images/eyes.jpg">
+      <p class="artwork_name_2"><strong> Tetemrehívás” </strong></p>
+      <a href="http://127.0.0.1:8000/JenőGyárfás/"><p class="artist_name_2">Jenő Gyárfás (1857-1925)</p></a>
+    </div>
+    <div class="flex-artwork_3">
+      <img class="artwork" src="/static/images/joker.jpg">
+      <p class="artwork_name_3"><strong>The Jester </strong></p>
+      <a href="http://127.0.0.1:8000/JanMatejko/"><p class="artist_name_3"> Jan Matejko (1838-1893)</p></a>
+    </div>
+   </div>             
+   <!-- user testimonials -->     
+   <section>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="mb-4">What do our users say?</h3>
+        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+          Wondering about our users' thoughts? Get the inside scoop directly from them! 
+          Explore their experiences, insights, and recommendations. 
+          Join the conversation and find out why our users are raving about their journey with us!
+        </p>
+      </div>
+    </div>
+    <div class="row text-center d-flex align-items-stretch">
+      <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+        <div class="card testimonial-card">
+          <div class="card-up" style="background-color: #9d789b;"></div>
+          <div class="avatar mx-auto bg-white">
+            <img src="/static/images/tite.jpg"
+              class="rounded-circle img-fluid" />
+          </div>
+          <div class="card-body">
+            <h4 class="mb-4">Victor Okafor</h4>
+            <hr />
+            <p class="dark-grey-text mt-4">
+              <i class="fas fa-quote-left pe-2"></i>
+              "Enchanting gallery! Diverse mix of traditional and contemporary art. 
+              Each piece is a portal into imagination. Seamless curation, vibrant ambiance.
+               A must-visit for art lovers!"
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+        <div class="card testimonial-card">
+          <div class="card-up" style="background-color: #7a81a8;"></div>
+          <div class="avatar mx-auto bg-white">
+            <img src="/static/images/ramces.jpg"
+              class="rounded-circle img-fluid" />
+          </div>
+          <div class="card-body">
+            <h4 class="mb-4">Ramces Artales</h4>
+            <hr />
+            <p class="dark-grey-text mt-4">
+              <i class="fas fa-quote-left pe-2"></i>"Artistic haven! Traditional and modern blend seamlessly. 
+              Each piece tells a story. A must for art enthusiasts!"
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-0 d-flex align-items-stretch">
+        <div class="card testimonial-card">
+          <div class="card-up" style="background-color: #6d5b98;"></div>
+          <div class="avatar mx-auto bg-white">
+            <img src="/static/images/jeremy.jpg"
+              class="rounded-circle img-fluid" />
+          </div>
+          <div class="card-body">
+            <h4 class="mb-4">Jeremy Feliciano</h4>
+            <hr />
+            <p class="dark-grey-text mt-4">
+              <i class="fas fa-quote-left pe-2"></i>
+              "Art paradise! Tradition meets modern effortlessly. 
+              Each piece tells a unique story. Perfect for art lovers!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      {% include 'webapp/templates/pages/footer.html' %}
+      {% endblock nav %}
+   </body>
+</html>

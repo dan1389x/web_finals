@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>artists</title>
+</head>
+<style>
+    body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 0px;
+    flex-direction: column;
+}  
+    .artist-container_1 {
+        margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: flex-start;
+  align-content: normal;
+}
+
+.artist_image_1 {
+    min-height: 266px;
+  min-width: 330px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.artist_info_1 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+artist_artwork_1 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+}
+.artist_button_1{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: flex-end;
+  order: 0;
+}
+.artist-container_2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: flex-start;
+  align-content: normal;
+}
+
+.artist_image_2 {
+    min-height: 266px;
+  min-width: 330px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.artist_info_2 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+artist_artwork_2 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+}
+.artist_button_2{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: flex-end;
+  order: 0;
+}
+
+</style>
+<body>
+      {% block nav %}
+      {% include 'webapp/templates/pages/navbar.html' %}
+      <!-- artist 1-->
+      <h1> Artists </h1>
+      <div class="artist-container_1">
+        <div class="artist_image_1">
+            <img class="img-thumbnail" src="/static/images/ito.jpg">
+        </div>
+        <div class="artist_info_1">
+            <h1> Ito Shinsui</h1>
+            <p> 
+                Ito Shinsui (1898–1972) was a renowned Japanese artist associated with the shin-hanga movement. 
+                He specialized in bijin-ga, depicting stylish and modernized portrayals of women through traditional woodblock printing. 
+                His work, such as the "New Forms of Thirty-Six Ghosts" series, reflects changing roles and fashions of Japanese women in the early to mid-20th century. 
+                Shinsui's legacy endures through his significant contributions to Japanese printmaking. 
+            </p>
+        <div class="artist_button_1">
+            <a href="http://127.0.0.1:8000/shinhui/"><button type="button" id="button" class="btn btn-outline-dark">Visit Gallery </button></a>
+        </div>
+    </div>
+  </div>
+  <!---->
+  <div class="artist-container_1">
+    <div class="artist_image_1">
+        <img class="img-thumbnail" src="/static/images/bbbetsey.jpg">
+    </div>
+    <div class="artist_info_1">
+        <h1> Betsy Westendorp</h1>
+        <p> 
+          Betsy Westendorp-Osieck was a Dutch painter, watercolourist, etcher, pastelist and draftsman who was part of the Amsterdamse Joffers painting group.
+        </p>
+    <div class="artist_button_1">
+      <a href="http://127.0.0.1:8000/westendorp/"><button type="button" id="button" class="btn btn-outline-dark">Visit Gallery </button></a>
+    </div>
+</div>
+</div>
+<!---->
+<div class="artist-container_1">
+  <div class="artist_image_1">
+      <img class="img-thumbnail" src="/static/images/vic_face.jpg">
+  </div>
+  <div class="artist_info_1">
+      <h1>Victor Nizovtsev</h1>
+      <p> 
+        Victor Nizovtsev is a masterful oil painter of theatrical figurative composition, fantasy, landscapes, and still life.
+         While his professional art training occurred in Russia, as an artist Victor is a student of rich and diverse experiences.
+      </p>
+  <div class="artist_button_1">
+    <a href="http://127.0.0.1:8000/nizovtsev/"><button type="button" id="button" class="btn btn-outline-dark">Visit Gallery </button>
+  </div>
+</div>
+</div>
+      {% include 'webapp/templates/pages/footer.html' %}
+      {% endblock nav %}
+</body>
+</html>

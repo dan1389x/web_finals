@@ -1,0 +1,14 @@
+<!-- templates/registration/register.html -->
+
+{% block content %}
+{% block nav %}
+{% include 'webapp/templates/pages/navbar.html' %}
+<h2>Register</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register</button>
+</form>
+{% include 'webapp/templates/pages/footer.html' %}
+{% endblock nav %}
+{% endblock %}

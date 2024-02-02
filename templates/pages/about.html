@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+</head>
+<style>
+    .creators {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: normal;
+  align-content: stretch;
+}
+
+.creator_1 {
+  margin-right: 50px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.me{
+    height: 250px;
+    width: 300px;
+}
+.creator_2 {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.rivs{
+    height: 250px;
+    width: 300px;
+}
+</style>
+<body>
+{% block nav %}
+{% include 'webapp/templates/pages/navbar.html' %}
+<center><h1> Meet us </h1></center>
+<div class="creators">
+    <div class="creator_1">
+        <img class="me" src="/static/images/edit_me.jpg">
+        <a href="/static/portfolio/Daniel_SalvalozaBSIT_3-2/index.html"><p style="margin-left: 85px; margin-bottom: 0px;">Daniel Salvaloza</p></a>
+        <p style="margin-left: 120px;">Manila</p>
+    </div>
+    <div class="creator_2">
+        <img class="rivs" src="/static/images/rivzzz.jpg">
+        <a href="https://sites.google.com/view/christianangelosrivera/home?authuser=0&fbclid=IwAR2OIW2RTar_nLJZRih-N2kbZqx_g04WWWgkwZrZXlltxh4bstlP5CGg4tw"><p style="margin-left: 70px; margin-bottom: 0px;">Christian Angelo Rivera</p></a>
+        <p style="margin-left: 130px;">Cavite</p>
+    </div>
+ </div>
+ <center><h1> About this gallery </h1></center>
+<p>
+    Welcome to Salvaloza Gallery, where artistic expression meets boundless imagination. Our gallery is a haven for art enthusiasts, a space where creativity knows no bounds and every stroke of a brush or click of a camera captures the essence of human emotion and ingenuity.
+
+At Salvaloza Gallery, we believe in the transformative power of art. Our carefully curated collection showcases a diverse array of mediums, styles, and perspectives, reflecting the rich tapestry of artistic expression that defines our world. From contemporary paintings that push the boundaries of perception to evocative sculptures that transcend the ordinary, our gallery is a celebration of the limitless possibilities that art offers.
+
+Founded with a passion for supporting emerging and established artists alike, Salvaloza Gallery serves as a platform for both seasoned virtuosos and promising newcomers to share their stories through art. We believe in fostering a community that values creativity, diversity, and the unbridled spirit of artistic exploration.
+
+Step inside our virtual gallery and immerse yourself in a world where colors dance, shapes converse, and emotions come to life. Whether you're a seasoned art connoisseur or a first-time visitor, [Your Gallery Name] invites you to experience the extraordinary and discover the beauty that lies within each carefully crafted masterpiece.
+Thank you for joining us on this artistic journey. We hope that Salvaloza Gallery becomes a place where art becomes not just an object of admiration, but a source of inspiration that resonates with your own unique perspective.
+
+Indulge your senses, ignite your imagination, and explore the wondrous realm of creativity at Salvaloza Gallery.
+</p>
+<center><h1> Who We Are </h1></center>
+<p>
+    At Salvaloza Gallery, we are more than just a showcase for art; we are a collective of passionate individuals united by our love for creativity and the belief in the profound impact of artistic expression. Our gallery is a testament to the idea that art is not merely an object, but a powerful force that has the ability to shape narratives, inspire emotions, and connect people across diverse backgrounds.
+</p>
+<center><h1> Our Mission </h1></center>
+<p>
+    Our mission is to provide a platform for artists to share their unique voices and stories with the world. We are dedicated to supporting both emerging talents and established artists, fostering an inclusive space where creativity flourishes. Salvaloza Gallery is committed to breaking down barriers, encouraging dialogue, and creating an environment where art transcends boundaries and resonates with a broad audience.
+</p>
+<center><h1>Community Engagement </h1></center>
+<p>
+    Beyond being a gallery, Salvaloza Gallery is a hub for cultural engagement. We actively engage with our community through exhibitions, workshops, and events that celebrate the arts. We aspire to create an inclusive and interactive space where art enthusiasts, artists, and the curious-minded can come together to appreciate, learn, and share in the joy of artistic discovery.
+</p>
+<center><h1>Commitment to Excellence</h1></center>
+<p>
+    We are committed to excellence in all aspects of our gallery, from the artists we feature to the experiences we offer our visitors. [Your Gallery Name] is dedicated to providing a seamless and inspiring journey for art lovers, ensuring that each visit leaves a lasting impression and fosters a deeper connection with the world of art.
+
+At Salvaloza Gallery, we invite you to join us in celebrating the limitless possibilities of artistic expression. Whether you're a seasoned collector, an aspiring artist, or someone simply curious about the world of art, we welcome you to be a part of our vibrant and ever-evolving community.
+</p>
+
+{% include 'webapp/templates/pages/footer.html' %}
+{% endblock nav %}
+</body>
+</html>

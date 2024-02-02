@@ -1,0 +1,16 @@
+<html>
+    <head>
+       <title> Success LogIn</title>
+    </head>
+    <body>
+      {% block content %}
+      {% block nav %}
+      {% include 'webapp/templates/pages/navbar.html' %}
+       <center><h1>LogIn Successfully</h1></center>
+       <a href="http://127.0.0.1:8000/home/"><center><p>go back to home?</p></center></a>
+       <a href="http://127.0.0.1:8000/upload/"><center><p>upload image</p></center></a>
+      {% include 'webapp/templates/pages/footer.html' %}
+      {% endblock nav %}
+      {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <head>
+      <title> Make your own gallery</title>
+    </head>
+    <body>
+       <center><h1> Make your own gallery</h1></center>
+       <h3> enter your first name and last name</h3>
+    <form method="post" action="{% url 'name_template' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+    <a href="http://127.0.0.1:8000/upload/"><p>submit image, click me</p></a>
+    </body>
+</html> 
